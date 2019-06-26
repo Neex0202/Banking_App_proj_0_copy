@@ -108,7 +108,11 @@ public class Main {
 			System.out.println("Enter your initial deposit \n");
 			String initialDep = scan.nextLine();
 			Double result3 = Double.parseDouble(initialDep);
-			bank.createAccount(result3, "savings");
+			
+			System.out.println("Enter a type of account you want to create \n");
+			String accountType = scan.nextLine();
+			
+			bank.createAccount(result3, accountType);
 //			bank.createAccount(5000, "savings");
 			loggedInOptions();
 		case "5":
